@@ -1,6 +1,6 @@
 const svgCaptcha = require("svg-captcha");
 const User = require("../model/userModel");
-
+const Captcha = require("../model/capchaModel");
 
 let captchas = {}; 
 
@@ -58,3 +58,4 @@ exports.verifyCaptcha = async (req, res) => {
     }
   };
 };
+
